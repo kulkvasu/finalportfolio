@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Gallery</title>
+  <title>About Me</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,7 +20,6 @@
   <div class="skip"><a href="#main">Skip to Main Content</a></div>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navtest">
-
       <!-- <a class="navbar-brand" href="#">Navbar</a> -->
       <a class="navbar-brand" href="index.html">
         <img src="images/favicon.PNG" alt="favicon" width="90" height="80" class="d-inline-block align-text-top">
@@ -36,10 +35,10 @@
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="aboutme.html">About Me</a>
+            <a class="nav-link" id="homeVisited" href="aboutme.html">About Me</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" id="homeVisited" href="gallery.html">Gallery</a>
+            <a class="nav-link" href="gallery.html">Gallery</a>
           </li>
           <li class="nav-item active">
             <!-- <a class="nav-link" href="gallery.html">Resume</a> -->
@@ -52,28 +51,41 @@
     </nav>
   </header>
   <main id="main">
-    <div class=galleryBG>
-      <div class=testfont>
-        <h1 class="testfont" id="aboutMeHeader">
-          Photography Gallery
-        </h1>
-        <h2 class="testfont" id="galleryQuote"> PHOTOGRAPHY IS THE STORY I FAIL TO PUT INTO WORDS.</h2>
-      </div>
-      <div class="galleryList">
-        <img class="galleryListPics" id="galleryList1" src="images/aurora1.jpg" alt="Aurora Borealis" />
-        <img class="galleryListPics" id="galleryList2" src="images/blossom.JPG" alt="Spring Blossoms" />
-        <img class="galleryListPics" id="galleryList3" src="images/brooklynBridge.JPG" alt="Brooklyn Bridge" />
-        <img class="galleryListPics" id="galleryList4" src="images/city.JPG" alt="New York City" />
-        <img class="galleryListPics" id="galleryList5" src="images/favsunset.JPG" alt="Sunset at Home" />
-        <img class="galleryListPics" id="galleryList6" src="images/field.JPG" alt="Flower Field" />
-        <img class="galleryListPics" id="galleryList7" src="images/goldengate.JPG" alt="Golden Gate Bridge" />
-        <img class="galleryListPics" id="galleryList8" src="images/grandCanyon.JPG" alt="Grand Canyon" />
-        <img class="galleryListPics" id="galleryList9" src="images/ocean.JPG" alt="Ocean" />
-        <img class="galleryListPics" id="galleryList10" src="images/parkSunset.JPG" alt="Sunset at Park" />
-        <img class="galleryListPics" id="galleryList11" src="images/tree.JPG" alt="Tree at NYC" />
-        <img class="galleryListPics" id="galleryList12" src="images/pastelAurora.jpg" alt="Aurora in Pastel Colors" />
+    <div class=about-me>
+
+      <h1 class="testfont" id="aboutMeHeader">
+        About Me
+      </h1>
+
+      <div class="aboutMeDescImg">
+        <p class="testfont" id="aboutMeDescription">Hi! I am Vasundhara Kulkarni a computer science student at the
+          University of Michigan. My expertise lies in full-stack web development, and data analytics. I have extensive
+          experience building complex applications and solving challenging problems. Some of my experiences include
+          interning as a software devloper at IBM and Morgan Stanley. I will be working at CVS Health this upcoming
+          summer at Soho, New York! My main focus these days is building accessible, inclusive products, and digital
+          experiences. In my free time I like running, reading, and am an avid photographer! I have included a glimpse
+          into my life below, but for more, check out my photographs at the gallery section!
+
+        </p>
+
+        <img src="images/picofme.JPG" id="picofMe" alt="self portrait">
+
       </div>
     </div>
+
+    <div class="aboutMePhotoGallery">
+      <img class="aboutMePics" src="images/venetian.JPG" alt="Venetian in Las Vegas" />
+      <img class="aboutMePics" src="images/hollywood.JPG" alt="Hollywood Sign" />
+      <img class="aboutMePics" src="images/harrypotter.JPG" alt="Harry Potter" />
+      <img class="aboutMePics" src="images/music.JPG" alt="I like music" />
+      <img class="aboutMePics" src="images/ski.jpg" alt="Me skiing" />
+      <img class="aboutMePics" src="images/iceClimb.jpg" alt="Me ice climbing" />
+      <img class="aboutMePics" src="images/duck.jpg" alt="Ducks" />
+      <img class="aboutMePics" src="images/squirrel.JPG" alt="Squirrel" />
+      <img class="aboutMePics" id="aboutMePicsLastMe" src="images/michiganAccept.JPG"
+        alt="I am a student at michigan" />
+    </div>
+
   </main>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -86,6 +98,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
 </body>
 <footer class="text-center text-dark">
   <!-- Grid container -->
